@@ -19,8 +19,8 @@ class Mail
                 [
                     'From' => 
                     [
-                        'Email' => "bonnal.tristan@hotmail.fr",
-                        'Name' => "La Boot'ique"
+                        'Email' => "yas.hammamo@hotmail.fr",
+                        'Name' => "SmellSmile"
                     ],
                     'To' => 
                     [

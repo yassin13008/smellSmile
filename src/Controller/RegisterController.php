@@ -36,7 +36,7 @@ class RegisterController extends AbstractController
 
             // Envoi mail confirmation
             $content = "Bonjour {$user->getFirstname()} nous vous remercions de votre inscription";
-            (new Mail)->send($user->getEmail(), $user->getFirstname(), "Bienvenue sur la Boot'ique", $content);
+            (new Mail)->send($user->getEmail(), $user->getFirstname(), "Bienvenue sur la SmellSmile", $content);
 
             // Loggin auto
             return $userAuthenticator->authenticateUser(

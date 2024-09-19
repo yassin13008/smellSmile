@@ -1,8 +1,8 @@
-# La Boot'ique :handbag: :dress: :high_heel:
+# SmellSmile 
 
-## The website :computer:
+## Le site internet:
 
-Simple Ecommerce with extern payment method. I made this website mainly to learn how to use a payment API, Easy Admin, and a mailer. Any user can suscribe, and then purchase any products. Of course, this is a test version of Strip, you can't really use your card. But still, a validation will be set, and you'll receive a confirmation mail. If you use the contact section, I will reveive an email from the website.
+Il s'agit de mon projet pour le diplome CDA Concepteur Développeur d'Application. C'est un simple site e-commerce qui comprends l'achat de produit divers et varié. Il est aussi composé d'un simple back-office afin de pouvoir ajouter/editer/supprimer des produits
 
 ![image info](./bootique.png)
 
@@ -10,39 +10,34 @@ Simple Ecommerce with extern payment method. I made this website mainly to learn
 
 ![image info](./bootique3.png)
 
-## Back Office :package:
 
-As an admin (role = "ROLE_ADMIN"), we can add products, modify banners, top products, handle users, carriers, categories and orders.
 
-![image info](./backoffice.png)
-![image info](./backoffice2.png)
+## Technologie utilisé pour ce projet:
 
-## Stack :wrench:
-
-- Symfony 5.4
+- Symfony 
 - Easy Admin
 - Twig
 - Bootstrap
 - Stripe
 - Mailjet
 
-## How to install project :hammer:
+## Comment installer le projet:
 
-- After cloning the repo, run :
+- Cloner le repo présent sur git :
   
     ```bash
     composer install
     ```
 
-- Import the database from file e-commerce.sql
-- Specify your work environment :
+- Importer la base de donnée suivante smellsmile.sql
+- Spécifier votre environnement comme ceci :
 
     ```bash
     DATABASE_URL="mysql://user_name:password@127.0.0.1:3306/database_name?serverVersion=mariadb-10.3.25"
     APP_ENV=dev
     ```
 
-- If needed, clear cache :
+- Si besoin nettoyer le cache  :
 
     ```bash
     php bin/console cache:clear

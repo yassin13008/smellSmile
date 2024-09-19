@@ -51,7 +51,9 @@ class PaymentController extends AbstractController
             ],
             'quantity' => 1
         ];
-        Stripe::setApiKey('sk_test_51Kb6uhClAQQ2TXfzOspWIks7VFbXX5e5ZTr5c4VCIQfNJATKvQZDHBODlaDkCnNmYntKUQLZK8YF4UbNPA5gMWzg00RHLAzE0G');
+
+        // Mettre cette clé API en variable d'environnement 
+        Stripe::setApiKey($_ENV['APP_STRIPE'] ?? null);
         header('Content-Type: application/json');
 
         $YOUR_DOMAIN = 'http://smellSmile.epdev';
